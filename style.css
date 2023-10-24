@@ -102,5 +102,12 @@ input {
     box-sizing: border-box;
 }
 
-/* css da segunda pagina */
+#logo {
+    display: flex;
+    color: white;
+
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+}
 
