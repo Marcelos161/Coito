@@ -1,0 +1,23 @@
+#form {
+    position: absolute;
+}
+
+#coracao {
+    position: absolute;
+
+    bottom: 0;
+    left: 50px;
+
+    font-size: 200px;
+
+    animation: infinite 500ms coracao ;
+}
+
+@keyframes coracao {
+    0% {
+        font-size: 200px;
+    }
+    100% {
+        font-size: 220px;
+    }
+}
