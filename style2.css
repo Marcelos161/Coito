@@ -1,8 +1,10 @@
 #form {
+    z-index: 999;
     position: absolute;
 }
 
 #coracao {
+    z-index: 1;
     position: absolute;
 
     bottom: 0;
