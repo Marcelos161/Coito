@@ -3,6 +3,7 @@ const botaoNao = document.getElementById('nao');
 const errado = document.getElementById('res');
 const outroRes = document.getElementById('outrores')
 const data = document.getElementById('data')
+const cantada = document.getElementById('cantada');
 
 let contador = 0;
 
@@ -18,6 +19,13 @@ function nao() {
 
 function sim() {
     window.location.href = `aceito.html?contador=${contador}`;
+}
+
+function parametrosDaPrimeiraPagina() {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    const cantadaURL = urlParams.get('cantada');
+    cantada.innerHTML = 'cantada';
 }
 
 // outra pagina
@@ -37,8 +45,10 @@ function confirmar() {
 
     const dataEscolhida = data.value;
 
-    const message = `Coito marcado para a data ${dataEscolhida} recusado: ${contagem}`
+    const message = `Date Marcado para a data ${dataEscolhida} recusado: ${contagem}`
 
     mensagem(message);
 }
+
+
 
