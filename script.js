@@ -4,6 +4,7 @@ const errado = document.getElementById('res');
 const outroRes = document.getElementById('outrores')
 const data = document.getElementById('data')
 const cantada = document.getElementById('cantada');
+onload = parametrosDaPrimeiraPagina;
 
 let contador = 0;
 
@@ -25,7 +26,13 @@ function parametrosDaPrimeiraPagina() {
     const urlParams = new URLSearchParams(window.location.search);
 
     const cantadaURL = urlParams.get('cantada');
-    cantada.innerHTML = 'cantada';
+    console.log(cantadaURL);
+    if (cantadaURL == null) {
+        cantada.innerHTML = "Date comigo, aceitas"
+    }else {
+        cantada.innerHTML = `${cantadaURL}`;
+    }
+    
 }
 
 // outra pagina
